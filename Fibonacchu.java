@@ -24,32 +24,29 @@
 +	
 +	System.out.print("Masukkan angka ajaib : ");
 +	n = s.nextInt();
-+	
-+	System.out.print("\n\n1 1 ");
-+	while (n > 2){
-+	c = a+b;
-+	System.out.print(c+" ");
-+	
-+	a=b; b=c;
-+	
-+	n--;
-+	}
+
++	int h[] = new int[n];
+        
+        //System.out.print("\n\n1 1 ");
+        for (int i=2; i<n; ++i){
+            c = a+b;
+            
+            h[i] = c;
+            
+            a=b; b=c;
+            
+            sum+=c;
+        }
+        while (n > 2){
+            System.out.print(h[n-1]+" ");
+            
+            n--;
+        }
+        
+        System.out.print("1 1");
+        
 +	System.out.print("~");
 +	System.out.println("\nchuu~");
 +	}
 +	
 +	}
-
-    Status
-    API
-    Training
-    Shop
-    Blog
-    About
-
-    © 2014 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Contact
-
